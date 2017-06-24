@@ -74,12 +74,12 @@ print("win values  $102 to $200, ", '%.1f' \
 # -----------------------------------------------------------------------------
 
 #  OTHER STRATEGIES 
-for pivotVAL in [11, 21, 41, 51, 61, 81, 101]: # [100, 101]: # 
+for pivotVAL in [10, 20, 40, 50, 60, 80, 100]: 
     HighSTAY = []
     HighSWITCH = []
     
     for i,j in zip(AlwaysSTAY, AlwaysSWITCH):
-        if i >= pivotVAL:
+        if i > pivotVAL:
             HighSTAY.append(i)
             HighSWITCH.append(j)
         else:
